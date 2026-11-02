@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: adapter-config
+  namespace: monitoring
+data:
+  config.yaml: |
+    rules:
+      - seriesQuery: 'predicted_cpu_usage{job="lstm_prediction"}'
+        name:
+          matches: "^predicted_cpu_usage$"
+          as: "predicted_cpu_usage"
+        metricsQuery: 'avg(predicted_cpu_usage{job="lstm_prediction"})'

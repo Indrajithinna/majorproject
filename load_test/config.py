@@ -1,0 +1,33 @@
+BASE_URL = "http://127.0.0.1:8001"
+INITIAL_USERS = 20
+
+MAX_USERS = 500
+
+USER_INCREMENT = 20
+
+REQUEST_INTERVAL = 2
+
+CURRENT_USERS = 0
+
+CURRENT_LOAD_LEVEL = "Low"
+
+MOST_REQUESTED_API = "/result"
+
+API_COUNTER = {
+    "/result": 0,
+    "/branch-ranks": 0,
+    "/college-ranks": 0
+}
+
+USNS = [
+    "1MG23IS001",
+    "1MG23IS002",
+    "1MG23IS003",
+    "1MG23IS004",
+    "1MG23IS005",
+    "1MG23IS006",
+    "1MG23IS007",
+    "1MG23IS008",
+    "1MG23IS009",
+    "1MG23IS010"
+]

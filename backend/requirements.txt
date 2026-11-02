@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+faker
+prometheus-fastapi-instrumentator
+prometheus-client
+psutil

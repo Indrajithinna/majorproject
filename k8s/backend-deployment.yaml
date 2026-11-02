@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: mgrk-backend
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: mgrk-backend
+
+  template:
+
+    metadata:
+      labels:
+        app: mgrk-backend
+
+    spec:
+
+      containers:
+
+      - name: backend
+        image: mgrk-backend:v3
+        imagePullPolicy: IfNotPresent
+
+        env:
+        - name: DB_HOST
+          value: "host.docker.internal"
+
+        ports:
+        - containerPort: 8000
+
+        resources:
+
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
+
+          limits:
+            cpu: "500m"
+            memory: "512Mi"

@@ -1,0 +1,17 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+approvers:
+  - dgrisonnet
+  - logicalhan
+  - dashpole
+
+reviewers:
+  - dgrisonnet
+  - olivierlemasle
+  - logicalhan
+  - dashpole
+
+emeritus_approvers:
+- brancz
+- directxman12
+- lilic
+- s-urbaniak
